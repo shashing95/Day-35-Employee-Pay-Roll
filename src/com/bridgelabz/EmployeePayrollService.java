@@ -66,6 +66,10 @@ public class EmployeePayrollService {
 	public void addEmployeeToPayroll(String name, double salary, LocalDate startDate, String gender) {
 		employeePayrollList.add(employeePayrollDbService.addEmployeePayroll(name,salary,startDate,gender));
 	}
+	public void addEmployeeToPayrollMultipleTable(String name, double salary, LocalDate startDate, String gender) {
+		employeePayrollList.add(employeePayrollDbService.addEmployeePayrollMultipleTable(name,salary,startDate,gender));
+	}
+	
 	private EmployeePayrollData getEmployeePayrollData(String name) {
 		EmployeePayrollData employeePayrollData;
 		employeePayrollData=this.employeePayrollList.stream()
