@@ -15,6 +15,10 @@ public class EmployeePayrollData {
 		this(id,name,salary);
 		this.startDate=startDate;
 	}
+		public EmployeePayrollData(Integer id,String name,Double salary,LocalDate startDate,Integer depart[]) {
+			this(id,name,salary,startDate);
+			
+	}
 	@Override
 	public String toString() {
 		return "id="+id+", Name='"+name+'\''+", Salary="+salary;
